@@ -6,6 +6,25 @@
     <title>AAAAAAAAAAAAa</title>
 </head>
 <body>
-    <h1>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaaa</h1>
+    <h1>
+        1. Que es una API REST
+    </h1>
+    <p>Segun el video, es "un codigo de backend que permite responder cosas al cliente, pero puede operar con una base de datos para consultas". Es un programa con un conjunto de reglas que permite la aplicacion entre aplicaciones. En este caso, entre la aplicacion hecha con NodeJS y la base de datos  MySQL</p>
+    <h1>
+        2. ¿Cómo implementar un manejo de errores robusto en una API REST construida con Node.js y MySQL? 
+    </h1>
+    <p>
+        Para manejar errores de manera robusta en una API REST construida con Node.JS y MySQL es necesario utilizar bloques try y catch en los cuales si la conexion con la base de datos de MySQL falla al realizar una peticion HTTP, se debe transmitir un codigo de status adecuado para el error y un mensaje descriptivo, y asi evitar que la aplicacion se comporte de forma erronea o se detenga por completo 
+    </p>
+    <h1>
+        3. ¿Cuáles son las mejores prácticas para devolver respuestas HTTP adecuadas (códigos de estado, mensajes de error) en diferentes escenarios, como errores de base de datos, validación de datos o errores internos del servidor?
+    </h1>
+    <p>
+        Cada respuesta debe devolver un codigo de estado adecuado, y un mensaje breve que describa la respuesta obtenida. Los codigos que empiezan por 4XX, representan errores del lado del cliente, indicando un error con la peticion en si, mientras que los codigos que empizan por 5XX representar errores del lado del servidor, errores en la respuestas. Codigos que empiezan por 2XX representan respuestas correctas.
+        <br>
+        Los mensajes deben ser utilizados para transmitir informacion adicional al cliente, ya sea para indicar el tipo de error, o que modificacion se hizo como respuesta a la peticion. 
+        <br>
+        Los codigos y mensajes son usualmente comunicados como un JSON
+    </p>
 </body>
 </html>
